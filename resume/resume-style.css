@@ -1,0 +1,355 @@
+body{
+	margin: 0px;
+}
+#main-header{
+	height: 65vh;
+    opacity: 0.8;
+    background-image: url(static/images/macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.3rem;
+   
+}
+/*navigation list*/
+
+.horizontal-list{
+	padding-left: 0px;
+	
+	margin: 0px;
+}
+.horizontal-list li {
+	display: inline-block;
+	margin: 0px 10px;
+
+}
+.horizontal-list li a{
+	text-decoration: none;
+	color:#f3f7ee;
+	font-size: 1.3rem;
+	transition: color,0.5s,border-bottom 4s;
+}
+nav .horizontal-list li a:hover{
+	border-bottom:  2px solid white;
+
+}
+.text-center{
+	text-align: center;
+}
+.heading{
+	margin-top: 120px;
+	
+	color:#f3f7ee;
+}
+.heading h1{
+	font-family:Candara; 
+	font-weight: bold;
+	font-size: 3rem;
+}
+#social-icons .horizontal-list li a i{
+	padding:10px;
+	font-size: 1.5rem;
+	border-radius: 50%;
+
+}
+#social-icons .horizontal-list li a i:hover{
+	box-shadow: 0px 0px 3px 4px #f3f7ee;
+}
+#about{
+	height:auto;
+	width: 100%;
+	position: relative;
+}
+#my-image{
+	height:12rem;
+	width:12rem;
+	margin: auto;
+	margin-top: -17vh;
+}
+#my-image img{
+	height:100%;
+	width:100%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px 4px white;
+}
+/*About section*/
+
+section{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+section:nth-child(2n){
+	background-color: #efefef;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+/*About*/
+.section-text{
+	width: 70%;
+	text-align: justify;
+	line-height: 28px;
+	font-size: 1.1rem;
+	color: grey;
+	padding: 10px;
+	margin: auto;
+
+
+}
+/*Skiils*/
+.margin-above{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.heading-name span{
+	color: #2857a4;
+	word-spacing: 1rem;
+	margin: auto;
+	font-family: Arial;
+	font-size: 1.5rem;
+
+}
+.skill-content{
+	margin:auto;
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+#skills .skill-content>div{
+	width:18rem;
+	
+	border:2px solid white;
+	border-radius:0.8rem;
+	box-shadow: 0px 0px 3px 4px #efefef;
+	margin:10px 0px;
+}
+ .skill-content>div div{
+	height: inherit;
+
+	border-bottom-left-radius: 0.8rem;
+	border-top-left-radius: 0.8rem;
+	padding-left: 4px;
+	
+
+}
+.eightyper {
+	width: 80%;
+}
+
+
+.fiftyper {
+	width: 50%
+}
+
+.nintyper {
+	width: 90%;
+}
+
+.sixtyper {
+	width: 60%;
+}
+
+
+.letter{
+	font-size: 1.2rem;
+	padding: 0px;
+
+}
+/*portfolio*/
+.image{
+	width: 20rem;
+	height:232px;
+	background-size: cover;
+    padding-top: 1.3rem;
+}
+.image1{
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png);
+	
+}
+.image2{
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png);
+	
+}
+/*Contact*/
+#contact{
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(180deg,#2857a4, #403066);
+
+}
+.contact-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contact-form,.contact-description{
+	width: 50%;
+	height: auto;
+	margin-bottom: 50px;
+}
+.contact-form form{
+	display: flex;
+	flex-direction: column;
+}
+.contact-form input,textarea{
+	max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+
+}
+.contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    margin-right: 10%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+.contact-description{
+	width: 35%;
+}
+#icons div span i{
+	color:white;
+	font-size: 1.1rem;
+}
+/*Expereice*/
+section .timeliner{
+	position: relative;
+	height: auto;
+	margin:auto;
+	width: 75%;
+
+
+}
+/*expereince min width*/
+
+.timeliner-box:nth-child(2n){
+	left:60%;
+
+}
+.timeliner-box:nth-child(2n)::before{
+	content: '';
+	position: absolute;
+	left:-24%;
+	top:10%;
+
+	border-radius:50%;
+	width: 0.8rem;
+	height: 0.8rem;
+	background-color: red;
+	z-index: 1;
+	
+}
+.timeliner-box:nth-child(2n+1)::before{
+	content: '';
+	position: absolute;
+	right: -11%;
+	top:10%;
+
+	border-radius:50%;
+	width: 0.8rem;
+	height: 0.8rem;
+	background-color: red;
+	z-index: 1;
+}
+.timeliner-box{
+	position: relative;
+	
+	min-height:150px;
+	width:45%;
+	margin: 5px;
+	padding: 5px;
+
+}
+/*@media screen and (max-width: 450px){
+	.timeliner-box{
+		position: relative;
+		min-height:150px;
+		width:100%;
+		margin: 5px;
+		padding: 5px;
+
+	}
+	.timeliner-box:nth-child(2n){
+	left:0%;
+
+	}
+	.line{
+	left:110%;
+	}
+	
+}*/
+.timeliner-box>h1{
+	font-size: 1.4rem;
+	color:blue;
+	overflow-wrap: break-word;
+
+}
+.timeliner-box>p{
+	font-size: 1.1rem;
+	overflow-wrap: break-word;
+
+}
+.line{
+	position: absolute;
+	height: 620px;
+	border-left:2px dotted blue;
+	left:50%;
+	bottom:8%;
+	width: 0;
+}
+.line-image{
+	position: sticky;
+	top:22%;
+	left:-15%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+@media screen and (max-width: 450px){
+	.timeliner-box{
+		position: relative;
+		min-height:150px;
+		width:100%;
+		margin: 5px;
+		padding: 5px;
+
+	}
+	.timeliner-box:nth-child(2n){
+	left:0%;
+
+	}
+	.line{
+	left:110%;
+	}
+	
+}
+.skill-content>div>div{
+	width: 0px;
+}
+#checkOnly{
+	width:10px;
+}
