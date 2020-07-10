@@ -51,8 +51,17 @@ function finding_value(elem,index){
       prev=eval(prev+currVal+1);
     }*/
      prev=eval(prev);
-     result.innerText=prev;
      prev=prev.toString();
+      if(prev.length>13){// if content overflow
+    
+      var resultBox=document.getElementById('result');
+      
+      resultBox.style.overflowX='scroll';
+      resultBox.style.overflowY='hidden';
+    }
+
+     result.innerText=prev;
+     
    }else if(currVal=='AC'){
       prev='';
       result.innerText='';
